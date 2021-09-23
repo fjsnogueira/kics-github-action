@@ -22,7 +22,7 @@ fi
 [[ ! -z "$INPUT_FAIL_ON" ]] && FAIL_ON_PARAM="--fail-on $INPUT_FAIL_ON"
 [[ ! -z "$INPUT_TIMEOUT" ]] && TIMEOUT_PARAM="--timeout $INPUT_TIMEOUT"
 [[ ! -z "$INPUT_PROFILING" ]] && PROFILING_PARAM="--profiling $INPUT_PROFILING"
-[[ ! -z "$INPUT_SECRETS_REGEXES_PATH" ]] && SECRETS_REGEXES_PATH="--secrets_regexes_path $INPUT_SECRETS_REGEXES_PATH"
+[[ ! -z "$INPUT_SECRETS_REGEXES_PATH" ]] && SECRETS_REGEXES_PATH="--secrets-regexes-path $INPUT_SECRETS_REGEXES_PATH"
 
 [[ ! -z "$INPUT_VERBOSE" ]] && VERBOSE_PARAM="-v"
 
