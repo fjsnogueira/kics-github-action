@@ -1,5 +1,5 @@
 # action.yml
-name: 'KICS Github Action'
+name: 'KICS Github Action - just for testing - not official'
 description: 'Run KICS scan against IaC projects'
 inputs:
   path:
@@ -47,6 +47,9 @@ inputs:
   queries:
     description: 'path to directory with queries (default "./assets/queries")'
     required: false
+  secrets_regexes_path:
+    description: 'path to secrets regex file (default "./secrets.json")'
+    required: false
   verbose:
     description: 'verbose scan'
 outputs:
@@ -74,4 +77,5 @@ runs:
     - ${{ inputs.output_path }}
     - ${{ inputs.payload_path }}
     - ${{ inputs.queries }}
+    - ${{ inputs.secrets_regexes_path }}
     - ${{ inputs.verbose }}
